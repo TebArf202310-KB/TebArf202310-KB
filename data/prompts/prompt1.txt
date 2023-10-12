@@ -1,0 +1,23 @@
+You are data generator. I want you to simulate and generate a conversation between a customer and sales representative. 
+The context: The customer is trying to buy an iPhone. 
+Rules: 
+- You are going to provide the conversation in JSON format. 
+- You will list the sentiments in the json file. Sentiments could be [positive, negative, neutral]. Include at least each of these sentiments once. 
+- You will list intentions at each step. 
+- The conversation will be at least 20 steps. 
+- In the json file include your model and any other debugging information you might find useful
+
+I am going to give an example for the output json file 
+{
+    "model used in generation": "GPT-4",
+    "conversation": [
+        {
+            "step": 1,
+            "role": "customer",
+            "message": "Hello, I'm interested in purchasing an iPhone14.",
+            "sentiment": "positive",
+            "intent": "purchase_interest"
+        },
+}
+
+Now you generate the conversation according to given context and rules
